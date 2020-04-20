@@ -32,12 +32,14 @@ public class DevelopmentTeamThreshold {
 		}
 		temp_senDec = senDev;
 		temp_totTeamMem = totTeamMem;
-		while (percentage < 60) {
+		int num=0;
+		for(int i=0;percentage<60;i++) {
 			percentage = (double)(temp_senDec / temp_totTeamMem) * 100;
 			temp_senDec++;
 			temp_totTeamMem++;
+			num=i;
 		}
-		System.out.println( temp_senDec-senDev);
+		System.out.println( num);
 
 	}
 
