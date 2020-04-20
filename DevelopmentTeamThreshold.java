@@ -19,6 +19,8 @@ public class DevelopmentTeamThreshold {
 			}
 			list.add(team);
 		}
+		System.out.println("Please enter threshold : ");
+		Integer threshold = sc.nextInt();
 		Integer senDev = 0;
 		Integer totTeamMem = 0;
 		double temp_senDec = 0;
@@ -33,7 +35,7 @@ public class DevelopmentTeamThreshold {
 		temp_senDec = senDev;
 		temp_totTeamMem = totTeamMem;
 		int num=0;
-		for(int i=0;percentage<60;i++) {
+		for(int i=0;percentage<threshold;i++) {
 			percentage = (double)(temp_senDec / temp_totTeamMem) * 100;
 			temp_senDec++;
 			temp_totTeamMem++;
